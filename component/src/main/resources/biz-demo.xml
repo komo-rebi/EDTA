@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table>
+    <name>demo</name>
+    <!-- 查询 -->
+    <retrieve>
+        <!-- 输入参数类 -->
+        <input>xxx.xxx.Class</input>
+        <!-- 输入结果类 -->
+        <output>xxx.xxx.Class</output>
+
+        <queryFunction>xxx.xxx.Class</queryFunction>
+        <convertFunction>xxx.xxx.Class</convertFunction>
+
+        <!-- before -->
+        <before>xxx.xxx.Class</before>
+        <!-- after -->
+        <after>xxx.xxx.Class</after>
+        <!-- around -->
+        <around>xxx.xxx.Class</around>
+        <!-- exception -->
+        <afterThrowing>xxx.xxx.Class</afterThrowing>
+        <!-- afterReturning -->
+        <afterReturning>xxx.xxx.Class</afterReturning>
+
+        <!-- try{-->
+        <!-- // 追加逻辑 前置通知 <aop:before>-->
+        <!-- // 原有组件的方法-->
+        <!-- // 追加逻辑 后置通知 <aop:after-returning>-->
+        <!-- ｝ catch(){-->
+        <!-- // 追加逻辑 异常通知 <aop:after-throwing>-->
+        <!-- }finally{-->
+        <!-- // 追加逻辑 最终通知 <aop:after>-->
+        <!-- }-->
+        <!-- //环绕通知：等价于前置 + 后置综合效果 <aop:around>-->
+    </retrieve>
+
+    <!-- 字段 -->
+    <fields>
+        <field>
+            <!-- 模型层 -->
+            <model>xxx</model>
+            <!-- 展示层 -->
+            <view>xxx</view>
+            <input>
+                <!-- 输入处理器 -->
+                <chain>xxx</chain>
+                <chain>xxx</chain>
+            </input>
+            <output>
+                <!-- 输出处理器 -->
+                <chain>xxx</chain>
+                <chain>xxx</chain>
+            </output>
+        </field>
+        <!--        <field>-->
+        <!--            &lt;!&ndash; 模型层 &ndash;&gt;-->
+        <!--            <model>xxx</model>-->
+        <!--            &lt;!&ndash; 展示层 &ndash;&gt;-->
+        <!--            <view>xxx</view>-->
+        <!--            <input>-->
+        <!--                &lt;!&ndash; 输入处理器 &ndash;&gt;-->
+        <!--                <chain>xxx</chain>-->
+        <!--                <chain>xxx</chain>-->
+        <!--            </input>-->
+        <!--            <output>-->
+        <!--                &lt;!&ndash; 输出处理器 &ndash;&gt;-->
+        <!--                <chain>xxx</chain>-->
+        <!--                <chain>xxx</chain>-->
+        <!--            </output>-->
+        <!--        </field>-->
+    </fields>
+</table>
